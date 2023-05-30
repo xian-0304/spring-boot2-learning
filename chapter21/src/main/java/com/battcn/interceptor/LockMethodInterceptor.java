@@ -30,6 +30,7 @@ public class LockMethodInterceptor {
             .expireAfterWrite(5, TimeUnit.SECONDS)
             .build();
 
+
     @Around("execution(public * *(..)) && @annotation(com.battcn.annotation.LocalLock)")
     public Object interceptor(ProceedingJoinPoint pjp) {
         MethodSignature signature = (MethodSignature) pjp.getSignature();

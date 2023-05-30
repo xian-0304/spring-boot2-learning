@@ -9,6 +9,7 @@ import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.web.client.RestTemplate;
 
 import java.net.URL;
 
@@ -26,6 +27,7 @@ public class Chapter1ApplicationTests {
 
     @Autowired
     private TestRestTemplate template;
+
 
     @Before
     public void setUp() throws Exception {
